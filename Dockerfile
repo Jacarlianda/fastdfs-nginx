@@ -3,7 +3,7 @@ FROM centos:7
 LABEL maintainer "29ygq@sina.com"
 
 ENV FASTDFS_PATH=/opt/fdfs \
-    FASTDFS_BASE_PATH=/var/fdfs \
+    FASTDFS_BASE_PATH=/mnt/fastdfs \
     NGINX_VERSION="1.14.0" \
     TENGINE_VERSION="2.2.2" \
     PORT= \
