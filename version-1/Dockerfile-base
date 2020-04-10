@@ -1,0 +1,5 @@
+# centos 7
+FROM centos:7
+
+# Run
+RUN yum clean all && yum makecache && yum update -y && yum groupinstall development tools -y
