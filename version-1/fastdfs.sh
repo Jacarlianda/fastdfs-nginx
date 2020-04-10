@@ -1,7 +1,7 @@
 #!/bin/bash
 
 new_trackerd=$FASTDFS_IPADDR
-old_trackerd="jacarlianda@gmail.com"
+old_trackerd="ipaddr"
 
 sed -i "s/$old_trackerd/$new_trackerd/g" /etc/fdfs/client.conf
 sed -i "s/$old_trackerd/$new_trackerd/g" /etc/fdfs/storage.conf
