@@ -2,5 +2,9 @@
 FROM centos:7
 
 # Run
-RUN yum clean all && yum makecache && yum update -y && yum install -y gcc make wget pcre pcre-devel openssl openssl-devel \
-  && rm -rf /var/cache/yum/* &&yum clean all
+RUN yum clean all && yum makecache && yum install -y gcc make wget pcre pcre-devel openssl openssl-devel \
+  && rm -rf /var/cache/yum/* && yum clean all
+
+
+# /var/lib/
+#
