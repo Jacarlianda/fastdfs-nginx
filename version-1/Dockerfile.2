@@ -1,4 +1,3 @@
-# centos 7
 FROM jacarlianda/fastdfs-base:v1
 # 添加配置文件
 # add profiles
@@ -23,7 +22,6 @@ ADD package/openssl-1.1.1f.tar.gz /usr/local/src/
 RUN yum install gcc gcc-c++ make automake autoconf libtool pcre pcre-devel zlib zlib-devel openssl-devel vim -y \
   &&  mkdir /home/dfs   \
   &&  cd /usr/local/src/  \
-  &&
   &&  cd libfastcommon-master/   \
   &&  ./make.sh && ./make.sh install  \
   &&  cd ../  \
@@ -42,3 +40,4 @@ VOLUME /etc/fdfs
 
 EXPOSE 22122 23000 8888 80
 ENTRYPOINT ["/home/fastdfs.sh"]
+# docker rmi jacarlianda/fastdfs:v1 && docker build -t jacarlianda/fastdfs:v1 -f Dockerfile.2 .
