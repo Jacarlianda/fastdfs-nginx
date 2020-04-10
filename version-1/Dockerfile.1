@@ -1,5 +1,5 @@
 # centos 7
-FROM centos:7
+FROM centos:centos8.1.1911
 
 # Run
 RUN yum clean all && yum makecache && yum install -y gcc make wget pcre pcre-devel openssl openssl-devel \
@@ -7,4 +7,4 @@ RUN yum clean all && yum makecache && yum install -y gcc make wget pcre pcre-dev
 
 
 # /var/lib/
-#
+# docker build -t jacarlianda/fastdfs-base:v1 -f Dockerfile.1 .

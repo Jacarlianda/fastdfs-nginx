@@ -2,6 +2,9 @@
 
 [fastdfs](https://github.com/happyfish100/fastdfs)
 
+
+[ygqygq2/fastdfs-nginx](https://hub.docker.com/r/ygqygq2/fastdfs-nginx)
+
 Usage:
 
 ```
